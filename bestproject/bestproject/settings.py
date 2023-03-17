@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'dataproject'
 ]
 
 MIDDLEWARE = [
@@ -72,11 +73,15 @@ WSGI_APPLICATION = 'bestproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+DATABASE_URL = 'postgres://nzpthemj:UHMvX3RvXg3VJkyUaBunFeEZEu7L92ah@mel.db.elephantsql.com/nzpthemj'
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'nzpthemj',
+        'USER': 'nzpthemj',
+        'PASSWORD': 'UHMvX3RvXg3VJkyUaBunFeEZEu7L92ah',
+        'HOST': 'mel.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
 
