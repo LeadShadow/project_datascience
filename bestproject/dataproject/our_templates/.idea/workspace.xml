@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9232b5c9-bb8b-4562-b574-af1cec3bad39" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../preview/durak.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../preview/interesting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../заняття/testlesson/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../m07_01/01ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../m07_01/ex08.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../m07_01/ex7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../m07_01/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/4323/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/43324/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/Py6Web/01_intro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/Py6Web/02_metaclass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/example oop/1ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/example oop/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/examplepyqt/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/43243.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/market.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/flask/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/gui/window_adressbook.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/gui/window_exit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/gui/window_file_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/gui/window_notebook.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/guibot/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/html/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/html/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/html/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/html/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/.idea/htmlnew.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/poetry.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/css/style_for_main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Ellipse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Img Overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Rectangle 9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/Vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/static/image/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlnew/templates/page_catalog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlpr/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlpr/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/htmlpr/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/hw 8/1ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/hw 8/2ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/hw 8/3ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/hw 8/423423423423.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/hw 8/9312.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/m09_01/01_09.ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/parsing_csv/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/parsing_csv/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/pr/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/practic/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/10ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/11ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/1ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/2ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/3ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/4ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/5ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/6ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/8ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/9ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/test_async/main2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ДЗШКИ КУРСИ/tyt/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/10ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/1ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/2ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/5ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/6ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/7ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/8ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../автоперевірка 8/9ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../проги/dada/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../проги/dada/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../проги/dada/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../проги/dada/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2N9NdUm4RKQz3ZDPdSXZXLhbeEC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JavaScript Debug.Storage.html">
+    <configuration name="Login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/our_templates/Login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/our_templates/Main.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Registration.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/our_templates/Registration.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Storage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/our_templates/Storage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="blog.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/our_templates/blog/blog.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Storage.html" />
+        <item itemvalue="JavaScript Debug.Main.html" />
+        <item itemvalue="JavaScript Debug.Login.html" />
+        <item itemvalue="JavaScript Debug.Registration.html" />
+        <item itemvalue="JavaScript Debug.blog.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9232b5c9-bb8b-4562-b574-af1cec3bad39" name="Changes" comment="" />
+      <created>1679072425873</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679072425873</updated>
+      <workItem from="1679072427187" duration="380000" />
+      <workItem from="1679074876079" duration="810000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
