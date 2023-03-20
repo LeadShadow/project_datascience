@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ua">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​Get Started">
+    <meta name="description" content="">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/Registration.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.6.10, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Registration">
+    <meta property="og:type" content="website">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+</head>
+<body class="u-body u-xl-mode" data-lang="ua">
+<section class="u-align-center u-clearfix u-white u-section-1" id="carousel_17d0">
+    <h2 class="u-align-center u-text u-text-default u-text-1"> Get Started</h2>
+    <img class="u-expanded-width u-image u-image-default u-image-1"
+         src="{% static 'img/5056e1f0-2aa7-635a-1d8f-e3bf2b515ad6.png' %}" alt="" data-image-width="1050"
+         data-image-height="707">
+    {% if error %}
+        <div class="u-form-send-error u-form-send-message">{{ error }} </div>
+{% endif %}
+    <div class="u-form u-radius-20 u-white u-form-1">
+        <form class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email" name="form"
+              style="padding: 23px;">
+            {% csrf_token %}
+            <div class="u-form-email u-form-group">
+                <label for="email-4c18" class="u-label">Username</label>
+                <input type="text" placeholder="Enter username" id="email-4c18" name="username"
+                       class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10" required="">
+            </div>
+            <div class="u-form-group u-form-group-2">
+                <label for="text-4595" class="u-label">Password </label>
+                <input type="password" placeholder="Enter your password" id="text-4595" name="password1"
+                       class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+                       required="required">
+            </div>
+            <div class="u-form-group u-form-group-3">
+                <label for="text-f87d" class="u-label">Confirmation password </label>
+                <input type="password" placeholder="Enter confirmation your password" id="text-f87d" name="password2"
+                       class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
+                       required="required">
+            </div>
+            <p class="u-align-right u-form-group u-form-text u-text u-text-2"> Already registered?&nbsp; <a
+                    href="/login"
+                    class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Login</a>
+            </p>
+            <div class="u-align-right u-form-group u-form-submit">
+                <a href="/"
+                   class="u-active-palette-4-light-1 u-border-3 u-border-active-palette-4-light-1 u-border-black u-border-hover-black u-btn u-btn-round u-btn-submit u-button-style u-grey-5 u-hover-palette-4-light-1 u-radius-10 u-btn-2">Register</a>
+                <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+{#            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent.</div>#}
+{#            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try#}
+{#                again.#}
+{#            </div>#}
+{#            <input type="hidden" value="" name="recaptchaResponse">#}
+{#            <input type="hidden" name="formServices" value="ba0c9bfef2acec8b757a19b24dda2696">#}
+        </form>
+    </div>
+</section>
+
+
+<section class="u-backlink u-clearfix u-grey-80">
+    <p class="u-text">
+        <span>The website was created by the</span>
+    </p>
+    <a class="u-link" href="https://github.com/LeadShadow/project_datascience" target="_blank">
+        <span>BDS6_2 team</span>
+    </a>.
+</section>
+
+</body>
+</html>
