@@ -8,7 +8,8 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 def main(request):
-    return render(request, 'dataproject/main.html', {})
+    return render(request, 'dataproject/index.html', {})
+
 @login_required
 def user_logout(request):
     logout(request)
@@ -44,7 +45,7 @@ def user_login(request):
             return render(request, 'dataproject/login.html',
                           {'form': AuthenticationForm(), 'error': 'Username or password didn\'t match'})
         login(request, user)
-        # return redirect('main')
-        return render(request, 'dataproject/main.html', {})
+        return redirect('main')
+
 def storage(request):
     return render(request, 'dataproject/storage.html')
