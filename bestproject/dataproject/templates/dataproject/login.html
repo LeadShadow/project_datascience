@@ -7,6 +7,8 @@
     <meta name="keywords" content="​Get Started">
     <meta name="description" content="">
     <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
     <link rel="stylesheet" href="{% static 'css/Login.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
@@ -35,48 +37,44 @@
     <img class="u-expanded-width u-image u-image-default u-image-1"
          src="{% static 'img/5056e1f0-2aa7-635a-1d8f-e3bf2b515ad6.png' %}" alt="" data-image-width="1050"
          data-image-height="707">
-    {% if error %}
-        <div class="u-form-send-error u-form-send-message">{{ error }} </div>
-    {% endif %}
-    <div class="u-form u-radius-20 u-white u-form-1">
-        <form class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" name="form"
-              style="padding: 23px;" method="post">
+    <div class="row justify-content-center">
+        <form class="u-form u-radius-20 u-white u-form-1" method="post">
+            {#    <div class="u-form u-radius-20 u-white u-form-1">#}
+            {#        <form class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 23px;" method="post">            {% csrf_token %}#}
+            {#        <form class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 23px;" method="post">#}
             {% csrf_token %}
-            {% if error %}
-                <div>
-                <div class="u-form-send-error u-form-send-message">{{ error }}</div>
-            {% endif %}
-            <div class="u-form-email u-form-group">
+
+            <div class="u-form-group u-form-group-2" style="margin-top: 10%">
                 <label for="email-4c18" class="u-label">Nickname</label>
                 <input type="text" placeholder="Enter a valid username" id="email-4c18" name="username"
                        class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10" required="">
             </div>
 
-            <div class="u-form-group u-form-group-2">
+            <div class="u-form-group u-form-group-2" style="margin-top: 10%">
                 <label for="text-4595" class="u-label">Password </label>
                 <input type="password" placeholder="Enter your password" id="text-4595" name="password"
                        class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-10"
                        required="">
             </div>
 
-            <p class="u-align-right u-form-group u-form-text u-text u-text-2"> Not registered yet? <a
-                    href="/signup"
-                    class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Register</a>
-            </p>
-
-            <div class="u-align-right u-form-group u-form-submit">
-                <a href="/"
-                   class="u-active-palette-4-light-1 u-border-3 u-border-active-palette-4-light-1 u-border-black u-border-hover-black u-btn u-btn-round u-btn-submit u-button-style u-grey-5 u-hover-palette-4-light-1 u-radius-10 u-btn-2">Login<br>
-                </a>
-                <input type="submit" class="u-form-control-hidden">
+            <div class="form-group mb-2"  style="margin-top: 10%">
+                <p class="u-align-right u-form-group u-form-text u-text u-text-2"> Not registered yet?
+                    <a href="/signup"
+                       class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Register</a>
+                </p>
             </div>
 
-            {#            <input type="hidden" value="" name="recaptchaResponse">#}
-            {#            <input type="hidden" name="formServices" value="ba0c9bfef2acec8b757a19b24dda2696">#}
+            <div class="form-group mb-2"  style="margin-top: 10%">
+                <button class="btn btn-primary col-sm-12 mb-2" type="submit">
+                    Login
+                </button>
+                <a class="btn btn-outline-danger col-sm-12 mb-2" href="/" role="button">Go to Main</a>
+            </div>
+
         </form>
     </div>
-</section>
 
+</section>
 
 <section class="u-backlink u-clearfix u-grey-80">
     <p class="u-text">
