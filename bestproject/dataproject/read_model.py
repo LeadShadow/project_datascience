@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-model_filename = Path('model/vgg16_cifar10_new_91.7.hdf5')
+model_filename = Path('./model/vgg16_cifar10_new_91.7.hdf5')
 model = tf.keras.models.load_model(model_filename)
 # Тут size повинен бути як в моделі
 
@@ -28,4 +28,4 @@ def predict_image(image):
 
 
 if __name__ == '__main__':
-    print(predict_image(Path('static/img/photo_2023-03-22_21-00-12.jpg')))
+    print(predict_image(Path('static/img/кінь.jpg')))

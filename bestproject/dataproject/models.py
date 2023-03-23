@@ -7,8 +7,8 @@ from django.db import models
 
 
 class Files(models.Model):
-    name = models.CharField(max_length=80, null=True)
-    type = models.CharField(max_length=50, null=True)
+    user_id = models.IntegerField(null=False)
+    file = models.FileField(null=True)
     up_time = models.DateTimeField(default=datetime.now())
 
 
