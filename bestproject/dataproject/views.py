@@ -4,16 +4,21 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.shortcuts import render, redirect
+# from .read_model import predict_image
+# from pathlib import Path
+from .models import Files
 
 
 # Create your views here.
 def main(request):
     return render(request, 'dataproject/index.html', {})
 
+
 @login_required
 def user_logout(request):
     logout(request)
     return redirect('main')
+
 
 def user_signup(request):
     if request.method == 'GET':
@@ -47,5 +52,10 @@ def user_login(request):
         login(request, user)
         return redirect('main')
 
+
 def storage(request):
-    return render(request, 'dataproject/storage.html')
+    if request.method == 'POST' and request.POST.get('myfile', None):
+        file = request.POST.get('myfile', None)
+        new_file = Files(user_id=request.user.id, file=file)
+        new_file.save()
+        return render(request, 'dataproject/storage.html')
