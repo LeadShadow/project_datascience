@@ -6,7 +6,7 @@ from django.db import IntegrityError
 from django.shortcuts import render, redirect
 # from .read_model import predict_image
 # from pathlib import Path
-from .models import Files
+from .models import Image
 
 
 # Create your views here.
@@ -53,9 +53,23 @@ def user_login(request):
         return redirect('main')
 
 
-def storage(request):
+@login_required
+def upload_photo(request):
     if request.method == 'POST' and request.POST.get('myfile', None):
-        file = request.POST.get('myfile', None)
-        new_file = Files(user_id=request.user.id, file=file)
+        image = request.POST.get('myfile', None)
+        new_file = Image(user_id=request.user.id, image=image)
         new_file.save()
+        all_photos = Image.objects.filter(user_id=request.user.id).all()
+        for i in all_photos:
+            print(i.image)
+        return render(request, 'dataproject/storage.html', {'photos': all_photos})
+    if request.method == 'GET':
+        return render(request, 'dataproject/storage.html')
+
+
+@login_required
+def storage(request):
+    if request.method == 'POST':
+        all_photos = Image.objects.filter(user_id=request.user).all()
+        print(all_photos)
         return render(request, 'dataproject/storage.html')
