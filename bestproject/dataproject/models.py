@@ -8,7 +8,8 @@ from django.db import models
 
 class Image(models.Model):
     user_id = models.IntegerField(null=False)
-    image = models.ImageField(null=True, blank=True, upload_to='images')
+    image = models.ImageField(null=True, blank=True, upload_to='images/')
+    image_id = models.IntegerField(null=False)
     up_time = models.DateTimeField(default=datetime.now())
 
 
