@@ -4,11 +4,20 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
+from os.path import exists
+import gdown
+
+model_filename = "vgg16_cifar10_new_91.7.hdf5"
+
+if not exists(model_filename):
+    url = 'https://drive.google.com/file/d/1BxzbDNLF3cnPj2Z7sh-pgsqyW3jmuuod/view?usp=share_link'
+    output = model_filename
+    gdown.download(url, output, quiet=False, fuzzy=True)
+
 model_filename = Path('./model/vgg16_cifar10_new_91.7.hdf5')
 model = tf.keras.models.load_model(model_filename)
-# Тут size повинен бути як в моделі
 
-classes=['Літак', 'Авто', 'Птах', 'Кіт', 'Олень', 'Собака', 'Жаба', 'Кінь', 'Корабель', 'Вантажівка']
+classes = ['Літак', 'Авто', 'Птах', 'Кіт', 'Олень', 'Собака', 'Жаба', 'Кінь', 'Корабель', 'Вантажівка']
 
 
 def resize_image(image_to_recognize):
@@ -28,4 +37,5 @@ def predict_image(image):
 
 
 if __name__ == '__main__':
+    print(predict_image(Path('static/img/кіт.jpg')))
     print(predict_image(Path('static/img/кінь.jpg')))
