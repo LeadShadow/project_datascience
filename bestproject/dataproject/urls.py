@@ -10,4 +10,4 @@ urlpatterns = [
     path('logout/', views.user_logout, name='user_logout'),
     path('storage/', views.upload_photo, name='upload_photo'),
     path('storage/', views.storage, name='storage'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
