@@ -14,6 +14,7 @@ if not exists(model_filename):
     output = model_filename
     gdown.download(url, output, quiet=False, fuzzy=True)
 
+model_filename = Path('./model/vgg16_cifar10_new_91.7.hdf5')
 model = tf.keras.models.load_model(model_filename)
 
 classes = ['Літак', 'Авто', 'Птах', 'Кіт', 'Олень', 'Собака', 'Жаба', 'Кінь', 'Корабель', 'Вантажівка']
@@ -37,3 +38,4 @@ def predict_image(image):
 
 if __name__ == '__main__':
     print(predict_image(Path('static/img/кіт.jpg')))
+    print(predict_image(Path('static/img/кінь.jpg')))
