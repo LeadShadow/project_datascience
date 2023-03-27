@@ -36,4 +36,4 @@ def predict_image(image):
 
 
 if __name__ == '__main__':
-    print(predict_image(Path('static/img/кіт.jpg')))
+    print(predict_image(Path('static/img/ДІМОН.jpg')))
