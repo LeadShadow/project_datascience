@@ -1,13 +1,15 @@
+from django.contrib.auth.decorators import login_required
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+from .models import Image
 
 from pathlib import Path
 
 import io
 import os
 
-from PIL import Image
+from PIL import Image as PIm
 
 CLIENT_SECRET_FILE = 'web6project.json'
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -19,8 +21,13 @@ service = build('drive', 'v3', credentials=service)
 
 folder_id = '1RdYoVP5lycHHNtraHrOPz9KkFoagOLIz'
 
-DOWNLOAD_DIR = Path('static/img/')
+DOWNLOAD_DIR = Path('static' / 'image')
 
+
+def resize_200(image_to_recognize):
+    img = PIm.open(image_to_recognize)
+    img = img.resize((200, 200))
+    return img
 
 def download_user_image(path, name):
     file_metadata = {'name': f'{name}', 'parents': [f'{folder_id}']}
@@ -36,7 +43,7 @@ def download_user_image(path, name):
 def load_user_image(img_id):
     file = service.files().get(fileId=img_id).execute()
     file_extension = os.path.splitext(file.get('name'))
-    print(file_extension)
+    # print(file_extension)
 
     file_content = service.files().get_media(fileId=img_id).execute()
     if not os.path.exists(DOWNLOAD_DIR):
@@ -44,10 +51,20 @@ def load_user_image(img_id):
 
     file_name = os.path.join(DOWNLOAD_DIR, file.get('name'))
     with io.BytesIO(file_content) as f:
-        with Image.open(f) as img:
+        with PIm.open(f) as img:
             img.save(file_name)
 
-    return True
+    return file_name
+
+def load_for_user(userid):
+    for f in os.listdir(DOWNLOAD_DIR):
+        os.remove(os.path.join(DOWNLOAD_DIR, f))
+    result = []
+    all_photos = Image.objects.filter(user_id=userid).all()
+    for photo in all_photos:
+        photo_name = load_user_image(photo.image_id)
+        result.append({'name': photo_name, 'class': photo.image_class})
+    return result
 
 
 if __name__ == '__main__':

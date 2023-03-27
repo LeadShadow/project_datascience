@@ -90,7 +90,7 @@
                 {% if photos %}
                     {% for photo in photos %}
                         <div class="u-container-style u-list-item u-repeater-item">
-                            <p class="u-custom-font u-custom-item u-font-raleway u-text u-text-2"><img src="/images{{ photo.image.url }}"></p>
+                            <p class="u-custom-font u-custom-item u-font-raleway u-text u-text-2"><img src="{% static '/' %}{{photo.name}}"></p>
                         </div>
                     {% endfor %}
                 {% endif %}
