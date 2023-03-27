@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: python bestproject/manage.py runserver 0.0.0.0:\$PORT
+  web: python bestproject/manage.py runserver 0.0.0.0:$PORT
