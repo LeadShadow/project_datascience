@@ -120,7 +120,6 @@ venv.bak/
 
 # mkdocs documentation
 /site
-/bestproject/dataproject/web6project.json
 # mypy
 .mypy_cache/
 .dmypy.json
