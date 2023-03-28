@@ -33,6 +33,7 @@
         <list>
           <option value="bool.startswith" />
           <option value="list.value" />
+          <option value="str.__truediv__" />
         </list>
       </option>
     </inspection_tool>
