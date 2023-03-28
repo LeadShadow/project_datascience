@@ -2,6 +2,9 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from pathlib import Path
+
+from google.oauth2 import service_account
 
 
 def main():
@@ -19,4 +22,9 @@ def main():
 
 
 if __name__ == '__main__':
+    CLIENT_SECRET_FILE = Path('dataproject/web6project.json')
+    SCOPES = ['https://www.googleapis.com/auth/drive']
+
+    service = service_account.Credentials.from_service_account_file(
+        CLIENT_SECRET_FILE.name, scopes=SCOPES)
     main()

@@ -3,14 +3,12 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from .models import Image
-
 from pathlib import Path
 
 import io
 import os
 
 from PIL import Image as PIm
-
 CLIENT_SECRET_FILE = Path('web6project.json')
 SCOPES = ['https://www.googleapis.com/auth/drive']
 

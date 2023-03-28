@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="578afb42-3c9a-486c-b1fc-f83258923cbd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_03_2023_21_36__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_03_2023_21_36__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/load_download_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/load_download_img.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/web6project.json" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/web6project.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679941173700</updated>
       <workItem from="1679941176731" duration="3351000" />
-      <workItem from="1679985392622" duration="497000" />
+      <workItem from="1679985392622" duration="2408000" />
     </task>
     <servers />
   </component>
