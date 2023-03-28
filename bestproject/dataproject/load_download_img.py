@@ -11,7 +11,7 @@ import os
 
 from PIL import Image as PIm
 
-CLIENT_SECRET_FILE = Path('.env')
+CLIENT_SECRET_FILE = Path('web6project.json')
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
 service = service_account.Credentials.from_service_account_file(
