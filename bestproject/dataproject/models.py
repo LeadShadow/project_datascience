@@ -10,7 +10,6 @@ class Image(models.Model):
     user_id = models.IntegerField(null=False)
     image_id = models.CharField(max_length=35, null=True)
     image_class = models.CharField(max_length=10, null=True)
-    # up_time = models.DateTimeField(default=datetime.now())
 
 
 class Model(models.Model):
