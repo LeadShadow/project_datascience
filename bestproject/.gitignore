@@ -1,4 +1,5 @@
 # Byte-compiled / optimized / DLL files
+
 __pycache__/
 *.py[cod]
 *$py.class
@@ -102,7 +103,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -119,7 +119,6 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -127,3 +126,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+bestproject/db.sqlite3
+*.iml
+bestproject/.idea/
+bestproject/dataproject/model
+hw
+../ourproject
