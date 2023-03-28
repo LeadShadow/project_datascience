@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09451a2-5a28-4c17-98fb-4f2618ae1079" name="Changes" comment="">
+    <list default="true" id="1a25d627-fc84-42d6-a0d5-e58b878c76e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/project_datascience.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_datascience.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/static/image/1_La_Casa_De_Papel[1].png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/static/image/il80.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +24,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2NdcuivdcNFj5DoJMhboMnOcpJR" />
+  <component name="ProjectId" id="2NeNM7axtJFjRTtIQMQEhWIvAUv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,12 +44,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c09451a2-5a28-4c17-98fb-4f2618ae1079" name="Changes" comment="" />
-      <created>1679997628420</created>
+      <changelist id="1a25d627-fc84-42d6-a0d5-e58b878c76e4" name="Changes" comment="" />
+      <created>1680020536420</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679997628420</updated>
-      <workItem from="1679997630099" duration="1433000" />
+      <updated>1680020536420</updated>
+      <workItem from="1680020537905" duration="546000" />
     </task>
     <servers />
   </component>
