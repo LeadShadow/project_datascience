@@ -21,13 +21,8 @@ service = build('drive', 'v3', credentials=service)
 
 folder_id = '1RdYoVP5lycHHNtraHrOPz9KkFoagOLIz'
 
-DOWNLOAD_DIR = Path('static' / 'image')
+DOWNLOAD_DIR = Path('dataproject/static/image')
 
-
-def resize_200(image_to_recognize):
-    img = PIm.open(image_to_recognize)
-    img = img.resize((200, 200))
-    return img
 
 def download_user_image(path, name):
     file_metadata = {'name': f'{name}', 'parents': [f'{folder_id}']}
@@ -54,11 +49,12 @@ def load_user_image(img_id):
         with PIm.open(f) as img:
             img.save(file_name)
 
-    return file_name
+    return os.path.join('image', file.get('name'))
 
 def load_for_user(userid):
-    for f in os.listdir(DOWNLOAD_DIR):
-        os.remove(os.path.join(DOWNLOAD_DIR, f))
+    if os.path.exists(DOWNLOAD_DIR):
+        for f in os.listdir(DOWNLOAD_DIR):
+            os.remove(os.path.join(DOWNLOAD_DIR, f))
     result = []
     all_photos = Image.objects.filter(user_id=userid).all()
     for photo in all_photos:

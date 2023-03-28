@@ -44,9 +44,7 @@
             {#        <form class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 23px;" method="post">#}
             {% csrf_token %}
             {% if error %}
-                <div>
-                    <mark style="background: palevioletred; color: darkred">{{ error }}</mark>
-                </div>
+                <div class="alert alert-danger">{{ error }}</div>
             {% endif %}
 
             <div class="u-form-group u-form-group-2" style="margin-top: 10%">

@@ -14,6 +14,7 @@ from .models import Image
 from .load_download_img import download_user_image, load_for_user
 from .read_model import predict_image
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 UPLOAD_DIR = Path('temp/')
 image_list = []
 
@@ -39,7 +40,8 @@ def main(request):
         # all_photos = Image.objects.filter(user_id=request.user.id).all()
         # for i in all_photos:
         #     print(i.image)
-        return render(request, 'dataproject/storage.html', {'photos': image_list})
+        image_list = load_for_user(request.user.id)
+        return render(request, 'dataproject/storage.html', {'photos': image_list[::-1]})
     return render(request, 'dataproject/index.html', {})
 
 
@@ -75,39 +77,30 @@ def user_login(request):
     else:
         print('not get', request.POST['username'], request.POST['password'])
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
-        print(user, user.id)
         if user is None:
             return render(request, 'dataproject/login.html',
                           {'form': AuthenticationForm(), 'error': 'Username or password didn\'t match'})
         login(request, user)
-        # print(user, user.id)
-        image_list = load_for_user(user.id)
-        # print(image_list)
         return redirect('main')
 
 
-@login_required
-def upload_photo(request):
-
-    if request.method == 'POST' and request.POST.get('myfile', None):
-        image = request.POST.get('myfile', None)
-        new_file = Image(user_id=request.user.id, image=image)
-        new_file.save()
-        all_photos = Image.objects.filter(user_id=request.user.id).all()
-        for i in all_photos:
-            print(i.image)
-        return render(request, 'dataproject/storage.html', {'photos': all_photos})
-    if request.method == 'GET':
-        return render(request, 'dataproject/storage.html')
+# @login_required
+# def upload_photo(request):
+#
+#     if request.method == 'POST' and request.POST.get('myfile', None):
+#         image = request.POST.get('myfile', None)
+#         new_file = Image(user_id=request.user.id, image=image)
+#         new_file.save()
+#         all_photos = Image.objects.filter(user_id=request.user.id).all()
+#         for i in all_photos:
+#             print(i.image)
+#         return render(request, 'dataproject/storage.html', {'photos': all_photos})
+#     if request.method == 'GET':
+#         return render(request, 'dataproject/storage.html')
 
 
 @login_required
 def storage(request):
-    global image_list
     print('######')
-    # if request.method == 'GET':
     image_list = load_for_user(request.user.id)
-    print(image_list)
-        # all_photos = Image.objects.filter(user_id=request.user).all()
-        # print('*****************', all_photos)
-    return render(request, 'dataproject/storage.html', {'photos': image_list})
+    return render(request, 'dataproject/storage.html', {'photos': image_list[::-1]})

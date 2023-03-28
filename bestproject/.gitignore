@@ -103,7 +103,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -120,7 +119,6 @@ venv.bak/
 
 # mkdocs documentation
 /site
-/bestproject/dataproject/web6project.json
 # mypy
 .mypy_cache/
 .dmypy.json
@@ -133,3 +131,4 @@ bestproject/db.sqlite3
 bestproject/.idea/
 bestproject/dataproject/model
 hw
+../ourproject

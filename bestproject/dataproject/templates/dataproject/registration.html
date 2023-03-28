@@ -45,9 +45,7 @@
         <form class="u-form u-radius-20 u-white u-form-1" method="post">
             {% csrf_token %}
             {% if error %}
-                <div>
-                    <mark style="background: palevioletred; color: darkred">{{ error }}</mark>
-                </div>
+                <div class="alert alert-danger">{{ error }}</div>
             {% endif %}
             <div class="u-form-group u-form-group-2" style="margin-top: 10%">
                 <label for="email-4c18" class="u-label">Username</label>
