@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="578afb42-3c9a-486c-b1fc-f83258923cbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bestproject/dataproject/credentionals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bestproject/dataproject/load_download_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/load_download_img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/web6project.json" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/web6project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/storage.html" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/templates/dataproject/storage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/dataproject/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/dataproject/web6project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/bestproject/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/temp/1_La_Casa_De_Papel[1].png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bestproject/temp/il80.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679941173700</updated>
       <workItem from="1679941176731" duration="3351000" />
-      <workItem from="1679985392622" duration="2408000" />
+      <workItem from="1679985392622" duration="7220000" />
     </task>
     <servers />
   </component>
@@ -113,6 +122,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/project_datascience$fsese.coverage" NAME="fsese Coverage Results" MODIFIED="1679947059172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestproject/dataproject" />
-    <SUITE FILE_PATH="coverage/project_datascience$load_download_img.coverage" NAME="load_download_img Coverage Results" MODIFIED="1679984503726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestproject/dataproject" />
+    <SUITE FILE_PATH="coverage/project_datascience$load_download_img.coverage" NAME="load_download_img Coverage Results" MODIFIED="1679995902153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bestproject/dataproject" />
   </component>
 </project>

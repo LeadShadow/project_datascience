@@ -3,29 +3,26 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from .models import Image
+
 from pathlib import Path
 
 import io
 import os
 
 from PIL import Image as PIm
-CLIENT_SECRET_FILE = Path('web6project.json')
+
+CLIENT_SECRET_FILE = 'web6project.json'
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
 service = service_account.Credentials.from_service_account_file(
-    CLIENT_SECRET_FILE.name, scopes=SCOPES)
+    CLIENT_SECRET_FILE, scopes=SCOPES)
 
 service = build('drive', 'v3', credentials=service)
 
 folder_id = '1RdYoVP5lycHHNtraHrOPz9KkFoagOLIz'
 
-DOWNLOAD_DIR = Path('static' / 'image')
+DOWNLOAD_DIR = Path('dataproject/static/image')
 
-
-def resize_200(image_to_recognize):
-    img = PIm.open(image_to_recognize)
-    img = img.resize((200, 200))
-    return img
 
 def download_user_image(path, name):
     file_metadata = {'name': f'{name}', 'parents': [f'{folder_id}']}
@@ -52,11 +49,12 @@ def load_user_image(img_id):
         with PIm.open(f) as img:
             img.save(file_name)
 
-    return file_name
+    return os.path.join('image', file.get('name'))
 
 def load_for_user(userid):
-    for f in os.listdir(DOWNLOAD_DIR):
-        os.remove(os.path.join(DOWNLOAD_DIR, f))
+    if os.path.exists(DOWNLOAD_DIR):
+        for f in os.listdir(DOWNLOAD_DIR):
+            os.remove(os.path.join(DOWNLOAD_DIR, f))
     result = []
     all_photos = Image.objects.filter(user_id=userid).all()
     for photo in all_photos:
