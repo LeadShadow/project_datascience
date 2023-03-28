@@ -80,7 +80,13 @@
                 <h6 class="u-custom-font u-font-raleway u-text u-text-2">Our team&nbsp;Best Data Scientists ever</h6>
                 <p class="u-custom-font u-font-raleway u-text u-text-3"> This is a small team project that includes a
                     registration window, image recognition, as well as storage with uploaded photos.&nbsp;</p>
-                <a href="#sec-c0d4"
+                <a
+                        {% if user.is_authenticated %}
+                        href="#sec-c0d4"
+                        {% else %}
+                        href="/"
+                        {% endif %}
+
                    class="u-active-white u-border-2 u-border-palette-4-dark-1 u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-font u-dialog-link u-font-raleway u-hover-black u-hover-feature u-radius-30 u-text-active-grey-10 u-text-body-color u-text-hover-grey-10 u-btn-1"
                    data-animation-name="pulse" data-animation-duration="0" data-animation-direction="">Download
                     photo</a>
