@@ -21,8 +21,8 @@ service = build('drive', 'v3', credentials=service)
 
 folder_id = '1RdYoVP5lycHHNtraHrOPz9KkFoagOLIz'
 
-DOWNLOAD_DIR = Path('dataproject/static/image')
-
+# DOWNLOAD_DIR = Path('dataproject/static/image')
+DOWNLOAD_DIR = Path(__file__).resolve().parent / 'static' / 'image'
 
 def download_user_image(path, name):
     file_metadata = {'name': f'{name}', 'parents': [f'{folder_id}']}
