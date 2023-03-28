@@ -23,25 +23,26 @@ def main(request):
     # if request.method == 'POST' and request.FILES['myfile']:
     #     file = request.FILES['myfile']
 
-    if request.method == 'POST' and request.FILES['myfile']:
-        file = request.FILES['myfile']
-        if os.path.exists(UPLOAD_DIR / file.name):
-            os.remove(UPLOAD_DIR / file.name)
-        fs = FileSystemStorage(UPLOAD_DIR)
-        filename = fs.save(file.name, file)
-        filepath = UPLOAD_DIR / filename
-        get_id_img = download_user_image(filepath, filename)
-        class_img = predict_image(filepath)
-        # class_img = 'professor'
-        new_string = Image(user_id=request.user.id, image_id=get_id_img, image_class=class_img)
-        new_string.save()
-        # new_file = Image(user_id=request.user.id, image=image)
-        # new_file.save()
-        # all_photos = Image.objects.filter(user_id=request.user.id).all()
-        # for i in all_photos:
-        #     print(i.image)
-        image_list = load_for_user(request.user.id)
-        return render(request, 'dataproject/storage.html', {'photos': image_list[::-1]})
+    if request.method == 'POST' and request.FILES.get('myfile', None):
+        file = request.FILES.get('myfile', None)
+        if file is not None and Path(file.name).suffix[1:].upper() in ('JPEG', 'JPG', 'PNG', 'SVG', 'ICO', 'BMP'):
+            if os.path.exists(UPLOAD_DIR / file.name):
+                os.remove(UPLOAD_DIR / file.name)
+            fs = FileSystemStorage(UPLOAD_DIR)
+            filename = fs.save(file.name, file)
+            filepath = UPLOAD_DIR / filename
+            get_id_img = download_user_image(filepath, filename)
+            class_img = predict_image(filepath)
+            # class_img = 'professor'
+            new_string = Image(user_id=request.user.id, image_id=get_id_img, image_class=class_img)
+            new_string.save()
+            # new_file = Image(user_id=request.user.id, image=image)
+            # new_file.save()
+            # all_photos = Image.objects.filter(user_id=request.user.id).all()
+            # for i in all_photos:
+            #     print(i.image)
+            image_list = load_for_user(request.user.id)
+            return render(request, 'dataproject/storage.html', {'photos': image_list[::-1]})
     return render(request, 'dataproject/index.html', {})
 
 
