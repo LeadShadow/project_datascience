@@ -21,7 +21,6 @@ service = build('drive', 'v3', credentials=service)
 
 folder_id = '1RdYoVP5lycHHNtraHrOPz9KkFoagOLIz'
 
-# DOWNLOAD_DIR = Path('dataproject/static/image')
 DOWNLOAD_DIR = Path(__file__).resolve().parent / 'static' / 'image'
 
 def download_user_image(path, name):
@@ -38,7 +37,6 @@ def download_user_image(path, name):
 def load_user_image(img_id):
     file = service.files().get(fileId=img_id).execute()
     file_extension = os.path.splitext(file.get('name'))
-    # print(file_extension)
 
     file_content = service.files().get_media(fileId=img_id).execute()
     if not os.path.exists(DOWNLOAD_DIR):
